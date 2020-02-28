@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script th:src="@{https://code.jquery.com/jquery-3.2.1.min.js}"></script>
+<script th:src="@{/js/index.js}"></script>
+</head>
+<body>
+<div class="box" data-formno="0" style="border:dashed 1px #ccc">
+  <p class="no">1</p>
+  <p>
+  【名前】<br>
+   <input type="text" name="input[0]" class="namae">
+  </p>
+  <p>
+   【お問い合わせ】<br>
+    <textarea name="textarea[0]" cols="30" rows="10" class="toiawase"></textarea>
+  </p>
+  
+  <button class="deleteformbox">削除</button>
+</div>
+  <p><button class="addformbox">追加</button></p>
+</body>
+</html>
